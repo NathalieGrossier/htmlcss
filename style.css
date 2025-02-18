@@ -2,10 +2,8 @@ img {
   max-width: 100%;
 }
 
-html {
-  border-color: rgb(127, 220, 20);
-  border-width: 2px;
-  border-style: solid;
+button {
+  border: none;
 }
 
 ul {
@@ -18,8 +16,15 @@ ul {
 }
 
 header {
-  display: flex;
-  flex-direction: column;
+  z-index: 1;
+  padding: 4px;
+  position: fixed;
+  width: 100%;
+  background: whitesmoke;
+
+  & #banniere {
+    display: none;
+  }
 
   & .flex {
     display: flex;
@@ -30,7 +35,6 @@ header {
   & nav {
     flex-grow: 1;
 
-    border: 2px solid red;
     & ul {
       display: flex;
       justify-content: center;
@@ -42,5 +46,89 @@ header {
         }
       }
     }
+  }
+}
+
+main {
+  text-align: center;
+  & section#hero {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./photo.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    & #video_hero {
+      position: absolute;
+      width: auto;
+      height: auto;
+      min-width: 100%;
+      min-height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    & #hero-content {
+      position: absolute;
+      background: rgba(128, 128, 128, 0.473);
+
+      padding: 8px;
+      border-radius: 8px;
+      width: 50%;
+
+      justify-content: center;
+      text-align: center;
+
+      & h1 {
+        color: rgb(255, 255, 255);
+
+        width: fit-content;
+        margin: auto;
+        border-radius: 8px;
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      & p {
+        padding: 16px;
+        text-align: center;
+        color: white;
+      }
+
+      & button {
+        background-color: rgb(255, 0, 157);
+        color: rgb(255, 255, 255);
+        padding: 8px;
+        border-radius: 8px;
+      }
+    }
+  }
+  & section#apropos {
+    padding: 8px;
+    height: 200px;
+  }
+
+  & section#experience {
+    height: 500px;
+    position: relative;
+    & #intro {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      background: aqua;
+    }
+  }
+
+  & section#contact {
+    padding: 8px;
+    height: 800px;
   }
 }

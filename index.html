@@ -8,22 +8,49 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <body cz-shortcut-listen="true" style="text-align: center">
-      <header>
-      <div id="banniere">toto</div>
+    <header>
+      <div id="banniere">Ma bannière</div>
       <div class="flex">
         <div id="logo">
           <img src="./logo.jpg" alt="logo instagram" />
         </div>
         <nav>
           <ul>
-            <li><a href="">Accueil</a></li>
-            <li><a href="">A propos</a></li>
-            <li><a href="">Expériences</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="#apropos">A propos</a></li>
+            <li><a href="#experience">Expériences</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    <main>
+      <section id="hero">
+        <video muted autoplay loop src="./tiny.mov" id="video_hero"></video>
+        <div id="hero-content">
+          <div id="background">
+            <h1>Mon portfolio</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusantium, debitis dicta cumque ut fugit, repellendus nesciunt
+              fuga, expedita maiores quaerat placeat iste minus recusandae eius
+              deleniti qui voluptatibus illo. Nam.
+            </p>
+            <button>En savoir plus</button>
+          </div>
+        </div>
+      </section>
+      <section id="apropos">A propos</section>
+      <section id="experience">
+        <div id="intro">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Necessitatibus voluptas, dignissimos dolorem atque, natus soluta illum
+          impedit culpa itaque explicabo sint facere saepe exercitationem fugiat
+          at! Itaque eos error enim!
+        </div>
+      </section>
+
+      <section id="contact">Contact</section>
+    </main>
   </body>
 </html>
