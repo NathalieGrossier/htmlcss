@@ -1,0 +1,46 @@
+img {
+  max-width: 100%;
+}
+
+html {
+  border-color: rgb(127, 220, 20);
+  border-width: 2px;
+  border-style: solid;
+}
+
+ul {
+  & li {
+    list-style-type: none;
+  }
+  & a {
+    text-decoration: none;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+
+  & .flex {
+    display: flex;
+  }
+  & #logo > img {
+    height: 60px;
+  }
+  & nav {
+    flex-grow: 1;
+
+    border: 2px solid red;
+    & ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      height: 100%;
+      align-items: center;
+      & li {
+        & a {
+        }
+      }
+    }
+  }
+}
