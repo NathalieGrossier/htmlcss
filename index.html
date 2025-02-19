@@ -1,56 +1,33 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <title>Media queries</title>
+    <link rel="stylesheet" href="./query.css" />
   </head>
   <body>
-    <header>
-      <div id="banniere">Ma bannière</div>
-      <div class="flex">
-        <div id="logo">
-          <img src="./logo.jpg" alt="logo instagram" />
-        </div>
-        <nav>
-          <ul>
-            <li><a href="/">Accueil</a></li>
-            <li><a href="#apropos">A propos</a></li>
-            <li><a href="#experience">Expériences</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section id="hero">
-        <video muted autoplay loop src="./tiny.mov" id="video_hero"></video>
-        <div id="hero-content">
-          <div id="background">
-            <h1>Mon portfolio</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Accusantium, debitis dicta cumque ut fugit, repellendus nesciunt
-              fuga, expedita maiores quaerat placeat iste minus recusandae eius
-              deleniti qui voluptatibus illo. Nam.
-            </p>
-            <button>En savoir plus</button>
-          </div>
-        </div>
-      </section>
-      <section id="apropos">A propos</section>
-      <section id="experience">
-        <div id="intro">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Necessitatibus voluptas, dignissimos dolorem atque, natus soluta illum
-          impedit culpa itaque explicabo sint facere saepe exercitationem fugiat
-          at! Itaque eos error enim!
-        </div>
-      </section>
-
-      <section id="contact">Contact</section>
-    </main>
+    <div class="flex">
+      <div class="global">1</div>
+      <div class="global">2</div>
+      <div class="global">3</div>
+      <div class="global">4</div>
+      <div class="global">5</div>
+      <div class="global">6</div>
+    </div>
+    <div class="grid">
+      <div class="global">La boutique</div>
+      <div class="global">Les ateliers de création</div>
+      <div class="global">Fournitures Beaux-Arts</div>
+      <div class="global">Encadrement sur-mesure</div>
+      <div class="global">Restauration d'oeuvres d'Art</div>
+    </div>
+    <div class="grid-areas">
+      <div class="global element-1">La boutique</div>
+      <div class="global element-2">Les ateliers de création</div>
+      <div class="global element-3">Fournitures Beaux-Arts</div>
+      <div class="global element-4">Encadrement sur-mesure</div>
+      <div class="global element-5">Restauration d'oeuvres d'Art</div>
+    </div>
   </body>
 </html>
